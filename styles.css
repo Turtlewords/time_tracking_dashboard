@@ -93,6 +93,7 @@
   }
 
   body {
+    font-family: "Rubik", sans-serif;
     padding: var(--space-200);
     margin: 0;
     background-color: var(--navy-950);
@@ -102,6 +103,32 @@
   .round {
     border-radius: 20px;
   }
+
+  section p {
+    margin: 0;
+  }
+
+  section h2 {
+    margin: 0;
+  }
+
+  .right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    padding: var(--space-300);
+  }
+
+  .left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    padding: var(--space-300);
+  }
+
+
 
   #hero-top {
     background-color: var(--purple-600);
@@ -125,15 +152,32 @@
   }
 
   #work-back {
-    background-color: var(--orange-300);
-    height: 50px;
-    background-image: url("images/icon-work.svg");
+    background-color: var(--navy-900);
+    position: absolute;
+    width: 100%;
+    top: 50px;
+    display: flex;
+    justify-content: space-around;
     
   }
 
-  #work-base {
-    background-color: var(--navy-900);
+  #work {
+    position: relative;
     
+    background-color: var(--orange-300);
+    height: 80px;
+    background-image: url("images/icon-work.svg");
+    background-repeat: no-repeat;
+    background-position: 95% -10px;
+    
+  }
+
+  /* Typography */
+
+  h2 {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px; 
   }
 
   /* Images */
