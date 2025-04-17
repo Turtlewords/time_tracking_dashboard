@@ -118,22 +118,14 @@
     margin: 0;
   }
 
-  .right {
+  .inner-content {
     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: center;
-    
+    justify-content: space-between;
+    align-items: center;
     
   }
 
-  .left {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    
-  }
+  
 
 
 
@@ -170,8 +162,7 @@
     /* position: absolute; */
     width: 100%;
     top: 35px;
-    display: flex;
-    justify-content: space-between;
+    
     padding: 20px;
   }
 
@@ -276,7 +267,7 @@
     cursor: pointer;
   }
 
-  .left p {
+  .bottom p {
     font-weight: 300;
     font-size: 40px;
     line-height: 66px;
