@@ -126,9 +126,6 @@
   }
 
   
-
-
-
   #hero-top {
     background-color: var(--purple-600);
     display: flex;
@@ -154,7 +151,7 @@
     height: 80px;
     background-repeat: no-repeat;
     background-position: 95% -10px; 
-    margin-bottom: 6rem;
+    margin-bottom: 5.5rem;
   }
 
   .content {
@@ -162,8 +159,10 @@
     /* position: absolute; */
     width: 100%;
     top: 35px;
-    
-    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 24px;
   }
 
   #work-back {
@@ -271,6 +270,19 @@
     font-weight: 300;
     font-size: 40px;
     line-height: 66px;
+  }
+
+  .current {
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 66px;
+  }
+
+  .prev {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: var(--purple-500);
   }
 
   /* Images */
