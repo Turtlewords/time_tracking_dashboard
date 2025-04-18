@@ -278,12 +278,14 @@
     line-height: 66px;
   }
 
-  .prev {
+  .prev, .prev-p {
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
     color: var(--purple-500);
   }
+
+ 
 
   /* Images */
 
