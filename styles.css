@@ -136,7 +136,7 @@
   #hero-top {
     background-color: var(--purple-600);
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     gap: var(--space-300);
     padding: var(--space-300);
@@ -161,6 +161,10 @@
     background-position: 95% -10px; 
     margin-bottom: 5.5rem;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  }
+
+  .content:hover {
+    background-color: var(--navy-800);
   }
 
   .content {
@@ -247,7 +251,7 @@
   h1 {
     margin: 0;
     font-weight: 300;
-    font-size: 32px;
+    font-size: 26px;
     line-height: 47px;
 
   }
@@ -274,6 +278,11 @@
     cursor: pointer;
   }
 
+  .white {
+    color: var(--white) !important;
+    
+  }
+
   .bottom p {
     font-weight: 300;
     font-size: 40px;
@@ -286,7 +295,7 @@
     line-height: 66px;
   }
 
-  .prev, .prev-p {
+  .prev {
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
@@ -303,7 +312,7 @@
   }
 
   #portrait {
-    width: 90px;
+    width: 70px;
     border: 4px solid var(--white);
     border-radius: 100%;
   }
@@ -336,6 +345,14 @@
       flex-direction: column;
       align-items: flex-start;
     }
+
+    h1 {
+      font-size: 32px;
+    }
+
+    .current {
+      font-size: 46px;
+    }
 }
 
 @media (min-width: 1400px) {
@@ -364,5 +381,9 @@
 
   #timeline {
     flex-direction: column;
+  }
+
+  #portrait {
+    width: 90px;
   }
 }

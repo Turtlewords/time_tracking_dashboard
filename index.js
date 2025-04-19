@@ -6,11 +6,29 @@ const daily = document.querySelector("#daily");
 const weekly = document.querySelector("#weekly");
 const monthly = document.querySelector("#monthly");
 
-daily.addEventListener("click", displayDaily);
+daily.addEventListener("click", () => {
+    daily.classList.add("white");
+    weekly.classList.remove("white");
+    monthly.classList.remove("white")
+    displayDaily();
+});
 
-weekly.addEventListener("click", displayWeekly);
 
-monthly.addEventListener("click", displayMonthly);
+weekly.addEventListener("click", () => {
+    daily.classList.remove("white");
+    weekly.classList.add("white");
+    monthly.classList.remove("white")
+    displayWeekly();
+});
+
+
+monthly.addEventListener("click", () => {
+    daily.classList.remove("white");
+    weekly.classList.remove("white");
+    monthly.classList.add("white")
+    displayMonthly();
+});
+
 
 function displayDaily() {
 
@@ -27,8 +45,8 @@ function displayDaily() {
             const prev = container.querySelector(".prev");
             const title = container.querySelector(".title");
 
-            current.textContent = data[index].timeframes.daily.current + " hrs";
-            prev.textContent = data[index].timeframes.daily.previous + " hrs";
+            current.textContent = data[index].timeframes.daily.current + "hrs";
+            prev.textContent = "Yesterday - " + data[index].timeframes.daily.previous + "hrs";
             title.textContent = data[index].title
             index++;
         }) 
@@ -51,8 +69,8 @@ function displayWeekly() {
             const prev = container.querySelector(".prev");
             const title = container.querySelector(".title");
 
-            current.textContent = data[index].timeframes.weekly.current + " hrs";
-            prev.textContent = data[index].timeframes.weekly.previous + " hrs";
+            current.textContent = data[index].timeframes.weekly.current + "hrs";
+            prev.textContent = "Last week - " + data[index].timeframes.weekly.previous + "hrs";
             title.textContent = data[index].title
             index++;
         }) 
@@ -75,8 +93,8 @@ function displayMonthly() {
             const prev = container.querySelector(".prev");
             const title = container.querySelector(".title");
 
-            current.textContent = data[index].timeframes.monthly.current + " hrs";
-            prev.textContent = data[index].timeframes.monthly.previous + " hrs";
+            current.textContent = data[index].timeframes.monthly.current + "hrs";
+            prev.textContent = "Last month - " + data[index].timeframes.monthly.previous + "hrs";
             title.textContent = data[index].title
             index++;
         }) 
