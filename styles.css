@@ -93,6 +93,7 @@
   }
 
   body {
+    min-height: 100vh;
     font-family: "Rubik", sans-serif;
     padding: var(--space-200);
     margin: 0;
@@ -125,6 +126,12 @@
     
   }
 
+  .content-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
   
   #hero-top {
     background-color: var(--purple-600);
@@ -137,13 +144,14 @@
 
   #hero {
     background-color: var(--navy-900);
-    
-    
+    grid-area: hero;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   }
 
   #timeline {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 8%;
     padding: var(--space-400);
   }
 
@@ -152,11 +160,11 @@
     background-repeat: no-repeat;
     background-position: 95% -10px; 
     margin-bottom: 5.5rem;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   }
 
   .content {
     background-color: var(--navy-900);
-    /* position: absolute; */
     width: 100%;
     top: 35px;
     display: flex;
@@ -166,28 +174,24 @@
   }
 
   #work-back {
-    /* background-color: var(--navy-900); */
+  
     position: absolute;
-    /* width: 100%;
-    top: 50px; */
-    /* display: flex;
-    justify-content: space-around; */
+    
     
   }
 
   #work {
     position: relative;
     background-color: var(--orange-300);
-    /* height: 80px; */
     background-image: url("images/icon-work.svg");
-    /* background-repeat: no-repeat;
-    background-position: 95% -10px;  */
+    grid-area: work;
   }
 
   #play {
     position: relative;
     background-color: var(--blue-300);
     background-image: url("images/icon-play.svg");
+    grid-area: play;
   }
 
   #play-back {
@@ -198,6 +202,7 @@
     position: relative;
     background-color: var(--pink-400);
     background-image: url("images/icon-study.svg");
+    grid-area: study;
   }
 
   #study-back {
@@ -208,6 +213,7 @@
     position: relative;
     background-color: var(--green-400);
     background-image: url("images/icon-exercise.svg");
+    grid-area: exercise;
   }
 
   #exercise-back {
@@ -218,6 +224,7 @@
     position: relative;
     background-color: var(--purple-700);
     background-image: url("images/icon-social.svg");
+    grid-area: social;
   }
 
   #social-back {
@@ -228,6 +235,7 @@
     position: relative;
     background-color: var(--yellow-300);
     background-image: url("images/icon-self-care.svg");
+    grid-area: self;
   }
 
   #self-care-back {
@@ -301,3 +309,60 @@
   }
 
 
+@media (min-width: 768px) {
+
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+
+    main {
+      width: 90%;
+      display: grid;
+      flex-shrink: 0;
+      grid-template-areas: 
+      "hero hero hero"
+      "work play study"
+      "exercise social self";
+    }
+
+    .container {
+      margin-bottom: 7rem;
+    }
+
+    .content-bottom {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+}
+
+@media (min-width: 1400px) {
+
+
+
+  main {
+    max-width: 1200px;
+    grid-template-columns: repeat(4, 250px);
+    grid-template-areas: 
+    "hero work play study"
+    "hero exercise social self";
+    justify-content: center;
+    align-items: center;
+    margin: 5rem auto;
+  }
+
+  #hero {
+    max-width: 300px;
+}
+
+  #hero-top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #timeline {
+    flex-direction: column;
+  }
+}
