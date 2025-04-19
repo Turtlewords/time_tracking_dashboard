@@ -165,7 +165,10 @@
 
   .content:hover {
     background-color: var(--navy-800);
+    cursor: pointer;
   }
+
+  
 
   .content {
     background-color: var(--navy-900);
