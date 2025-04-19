@@ -333,7 +333,6 @@
     main {
       width: 90%;
       display: grid;
-      flex-shrink: 0;
       grid-template-areas: 
       "hero hero hero"
       "work play study"
@@ -370,12 +369,9 @@
     "hero exercise social self";
     justify-content: center;
     align-items: center;
-    margin: 5rem auto;
   }
 
-  #hero {
-    max-width: 300px;
-}
+ 
 
   #hero-top {
     flex-direction: column;
