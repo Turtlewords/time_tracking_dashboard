@@ -3,126 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <meta name="description" content="Tracks time spent on certain activities">
+  <meta name="description" content="Dashboard for tracking time spent on different activities">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Time tracking dashboard</title>
-
+  <link rel="stylesheet" href="styles.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <main>
-    <!-- HERO SECTION -->
-    <section id="hero" class="round">
-        <div id="hero-top" class="round">
-          <img id="portrait" src="images/image-jeremy.png" alt="portrait of jeremy">
-          <div id="name-box">
-            <p>Report for</p>
-            <h1>Jeremy Robson</h1>
-          </div>
+  <div id="container">
+    <section id="user">
+      <div id="user-top">
+        <img id="jeremy-pic" src="images/image-jeremy.png" alt="portrait of Jeremy">
+        <div id="inner-user">
+          <p>Report for</p>
+          <h1>Jeremy Robson</h1>
         </div>
-        <div id="timeline">
-          <p id="daily" class="white">Daily</p><p id="weekly">Weekly</p><p id="monthly">Monthly</p>
-        </div>
-        
-      
+      </div>
+      <div id="timeframes">
+        <button id="daily">Daily</button>
+        <button id="weekly">Weekly</button>
+        <button id="monthly">Monthly</button>
+      </div>
     </section>
+    <div id="card-container">
+    </div>
+  </div>
 
-    <!-- WORK -->
-     <section id="work" class="round container">
-      <div id="work-back" class="round content">
-        <div class="inner-content">
-          <h2 class="title"></h2>
-          <img src="images/icon-ellipsis.svg" alt="ellipsis">
-        </div>
-        <div class="content-bottom">
-          <p class="current"></p>
-          <p class="prev"></p>
-        </div>
-      </div>
-     </section>
-
-     <!-- PLAY -->
-
-     <section id="play" class="round container">
-      <div id="play-back" class="round content">
-        <div class="inner-content">
-          <h2 class="title"></h2>
-          <img src="images/icon-ellipsis.svg" alt="ellipsis">
-        </div>
-        <div class="content-bottom">
-          <p class="current"></p>
-          <p class="prev"></p>
-        </div>
-      </div>
-     </section>
-     
-
-
-     <!-- STUDY -->
-
-     <section id="study" class="round container">
-      <div id="study-back" class="round content">
-        <div class="inner-content">
-          <h2 class="title"></h2>
-          
-          <img src="images/icon-ellipsis.svg" alt="ellipsis">
-        </div>
-        <div class="content-bottom">
-          <p  class="current"></p>
-          <p class="prev"></p>
-        </div>
-      </div>
-     </section>
-
-     <!-- EXERCISE -->
-
-     <section id="exercise" class="round container">
-      <div id="exercise-back" class="round content">
-        <div class="inner-content">
-          <h2 class="title"></h2>
-          <img src="images/icon-ellipsis.svg" alt="ellipsis">
-        </div>
-        <div class="content-bottom">
-          <p class="current"></p>
-          <p class="prev"></p>
-        </div>
-      </div>
-     </section>
-
-     <!-- SOCIAL -->
-
-     <section id="social" class="round container">
-      <div id="social-back" class="round content">
-        <div class="inner-content">
-          <h2 class="title"></h2>
-          <img src="images/icon-ellipsis.svg" alt="ellipsis">
-        </div>
-        <div class="content-bottom">
-          <p class="current"></p>
-          <p class="prev"></p>
-        </div>
-      </div>
-     </section>
-
-     <!-- SELF CARE -->
-
-     <section id="self-care" class="round container">
-      <div id="self-care-back" class="round content">
-        <div class="inner-content">
-          <h2 class="title"></h2>
-          <img src="images/icon-ellipsis.svg" alt="ellipsis">
-        </div>
-        <div class="content-bottom">
-          <p class="current"></p>
-          <p class="prev"></p>
-        </div>
-      </div>
-     </section>
-  </main>
+  
   <script src="index.js"></script>
 </body>
 </html>
