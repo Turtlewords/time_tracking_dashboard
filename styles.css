@@ -117,7 +117,7 @@ body {
 #user-top {
   background-color: var(--purple-600);
   border-radius: 16px;
-  padding: 2.5rem 2rem;
+  padding: 2.5rem 1.75rem;
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -146,7 +146,7 @@ body {
   background-color: inherit;
   color: var(--purple-500);
   font-weight: 400;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 38px;
 }
 
@@ -162,7 +162,7 @@ body {
 }
 
 .card {
-  padding-block-start: 3rem;
+  padding-block-start: 2.8rem;
   background-repeat: no-repeat;
   background-position: top -8px right 5px;
   border-radius: 16px;
@@ -237,7 +237,7 @@ h1 {
 
 h2 {
   margin: 0;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 18px;
   line-height: 21px; 
 }
@@ -250,6 +250,9 @@ h2 {
 
 #inner-user p {
   margin: 0;
+  font-weight: 400;
+  font-size: 15px;
+
 }
 
 .current {
@@ -307,7 +310,7 @@ img {
 
   .content {
       gap: 1rem;
-      padding: 2rem;
+      padding: 1.5rem;
   }
 
   .content-bottom {
@@ -346,6 +349,11 @@ img {
       grid-template-rows: 1fr 1fr;
   }
 
+  .content {
+    gap: 1.5rem;
+    
+}
+
   #user-top {
       flex-direction: column;
       align-items: flex-start;
@@ -355,12 +363,12 @@ img {
 
   #jeremy-pic {
     width: 85px;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
   }
 
   h1 {
     font-size: 40px;
-    margin-top: 10px;
+    margin-top: 5px;
     
   }
 
