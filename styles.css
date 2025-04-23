@@ -162,7 +162,7 @@ body {
 }
 
 .card {
-  padding-block-start: 2.5rem;
+  padding-block-start: 3rem;
   background-repeat: no-repeat;
   background-position: top -8px right 5px;
   border-radius: 16px;
@@ -238,7 +238,7 @@ h1 {
 h2 {
   margin: 0;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 21px; 
 }
 
@@ -325,6 +325,9 @@ img {
 
 @media (min-width: 1400px) {
   
+  .current {
+    font-size: 60px;
+}
 
   #container {
       flex-direction: row;
@@ -334,19 +337,31 @@ img {
   }
 
   #user {
-      width: 240px;
+      width: 250px;
       
   }
 
   #card-container {
-      grid-template-columns: repeat(3, 240px);
+      grid-template-columns: repeat(3, 250px);
       grid-template-rows: 1fr 1fr;
   }
 
   #user-top {
       flex-direction: column;
       align-items: flex-start;
+      gap: 1rem;
       padding-bottom: 5rem;
+  }
+
+  #jeremy-pic {
+    width: 85px;
+    margin-bottom: 1rem;
+  }
+
+  h1 {
+    font-size: 40px;
+    margin-top: 10px;
+    
   }
 
   #timeframes {
